@@ -1,0 +1,21 @@
+﻿<Window x:Class="ApartmentSale.UpdateAdvertisementWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ApartmentSale"
+        mc:Ignorable="d"
+        Title="UpdateAdvertisementWindow" Height="338.27" Width="245.702">
+    <Grid  Background="AliceBlue">
+        <Label x:Name="label" Content="Enter edit indormation:" Foreground="#C2185B" FontSize="18px" HorizontalAlignment="Left" Margin="16,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.921,0.346"/>
+        <Label x:Name="label1" Content="Price:" HorizontalAlignment="Left" Margin="20,46,0,0" VerticalAlignment="Top" Width="48"/>
+        <Label x:Name="label2" Content="Square:" HorizontalAlignment="Left" Margin="20,97,0,0" VerticalAlignment="Top" Width="62"/>
+        <Label x:Name="label3" Content="RoomsCount:" HorizontalAlignment="Left" Margin="20,149,0,0" VerticalAlignment="Top" Width="103"/>
+        <Label x:Name="label4" Content="Adress:" HorizontalAlignment="Left" Margin="22,194,0,0" VerticalAlignment="Top" Width="61"/>
+        <TextBox x:Name="tbPrice" HorizontalAlignment="Left" Height="23" Margin="25,71,0,0" TextWrapping="Wrap" Text="11" VerticalAlignment="Top" Width="174"/>
+        <TextBox x:Name="tbSquare" HorizontalAlignment="Left" Height="23" Margin="25,124,0,0" TextWrapping="Wrap" Text="11" VerticalAlignment="Top" Width="178"/>
+        <TextBox x:Name="tbRoomsCount" HorizontalAlignment="Left" Height="23" Margin="28,172,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="175"/>
+        <TextBox x:Name="tbAdress" HorizontalAlignment="Left" Height="23" Margin="28,219,0,0" TextWrapping="Wrap" Text="цццц" VerticalAlignment="Top" Width="175"/>
+        <Button x:Name="SaveButton" Content="Save" Background="Transparent" BorderBrush="#C2185B" Foreground="#C2185B" FontSize="16px" HorizontalAlignment="Left" Margin="28,252,0,0" VerticalAlignment="Top" Width="175" Height="27" Click="SaveButton_Click"/>
+    </Grid>
+</Window>

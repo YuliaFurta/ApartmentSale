@@ -1,4 +1,5 @@
-﻿namespace ApartmentSale
+﻿// Review OB: It’s better to name namespace for UI - ApartmentSale.UI instead of just ApartmentSale.
+namespace ApartmentSale
 {
     using System;
     using System.Collections.Generic;
@@ -11,6 +12,7 @@
 
     public partial class CustomerWindow : Window
     {
+        // Review OB: Static fields should be PascalCase.
         public static UnitOfWork unitOfWork = new UnitOfWork();
 
         private int userId = LoginWindow.UserId;
@@ -73,6 +75,7 @@
 
             btnLike.IsEnabled = false;
             btnLike.Visibility = Visibility.Collapsed;
+            // Review OB: You should use var when the type of the variable is obvious from the right side of the assignment.
             string headerText = (tabControl.Items.GetItemAt(0) as TabItem).Header.ToString();
 
             if (headerText == "My Advertisements")

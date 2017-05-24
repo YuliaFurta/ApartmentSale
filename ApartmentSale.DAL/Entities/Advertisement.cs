@@ -14,7 +14,7 @@
 
         [Key]
         public int AdvertisementId { get; set; }
-
+        // Review OB: This field and several others are not required, but i must specify them in UI app.
         [Column(TypeName = "money")]
         public decimal Price { get; set; }
 

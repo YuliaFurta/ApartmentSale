@@ -1,5 +1,6 @@
 ﻿namespace ApartmentSale.DAL
 {
+    // Review OB: This using and several others are unnecessary.
     using System;
     using System.Data.Entity;
     using System.Linq;

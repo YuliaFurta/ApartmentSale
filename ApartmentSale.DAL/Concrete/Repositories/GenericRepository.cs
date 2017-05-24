@@ -5,7 +5,7 @@
     using System.Data.Entity;
     using System.Linq;
     using System.Linq.Expressions;
-
+    // Review OB: GenericRepository should depend on some abstraction. Consider using interfaces.
     public class GenericRepository<TEntity> where TEntity : class
     {
         internal AppSaleContext context;
